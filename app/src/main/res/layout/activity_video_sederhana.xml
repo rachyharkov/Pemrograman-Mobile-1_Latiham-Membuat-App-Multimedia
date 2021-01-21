@@ -1,39 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VideoSederhanaActivity">
-
-    <ProgressBar
-        android:id="@+id/progress_bar_stream"
-        style="?android:attr/progressBarStyleHorizontal"
+    <VideoView
+        android:id="@+id/v_video"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <LinearLayout
+        android:layout_height="250dp"
+        />
+    <Button
+        android:id="@+id/btn_playvideo"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY VIDEO"
+        android:layout_marginTop="25dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/btn_play_streaming"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="PLAY"
-            android:background="@color/purple_700"
-            android:textColor="@android:color/white"
-            android:layout_margin="10dp"/>
-        <Button
-            android:id="@+id/btn_stop_streaming"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="STOP"
-            android:background="@color/purple_700"
-            android:textColor="@android:color/white"
-            android:layout_margin="10dp"/>
-    </LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/white"
+        app:menu="@menu/navigation_menu">
 
-
-</LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

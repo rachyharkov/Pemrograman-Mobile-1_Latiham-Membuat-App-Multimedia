@@ -35,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.nav_audio_streaming:
                     startActivity(new Intent(MainActivity.this, AudioStreamingActivity.class));
                     break;
+                case R.id.nav_video_sederhana:
+                    startActivity(new Intent(MainActivity.this, VideoSederhanaActivity.class));
+                    break;
+                case R.id.nav_video_streaming:
+                    startActivity(new Intent(MainActivity.this, VideoStreamingActivity.class));
+                    break;
             }
             return false;
         }

@@ -40,7 +40,7 @@ public class AudioStreamingActivity extends AppCompatActivity {
 
     private void prepareAudioStream() {
         //masukan url Streaming, misalkan
-        String url = "https://wow4.mahakaradiointegra.com:1936/web_mustangfm/mustangfm/playlist.m3u8";
+        String url = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
         mPlayer = new MediaPlayer();
         //menampilkan error tanpa crash dengan try
         try {
